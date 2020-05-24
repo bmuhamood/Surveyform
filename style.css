@@ -1,0 +1,17 @@
+body{
+  background-color: blue;
+  background-image: url('image.jpg');
+  background-size: cover;
+}
+#survey-form{
+  background-color: #0c1e75;
+  padding: 2.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+#title{
+  color: white;
+}
+#description{
+  color: white;
+}

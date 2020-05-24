@@ -2,25 +2,126 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title></title>
   </head>
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form class="" action="index.html" method="post" id="survey-form">
-        <label id="name-label" >Name</label>
-        <input id="name" type="text" placeholder="name"/>
+    <div class="container">
+    <div class="row mt-5">
+    <div class="col col-md-6 offset-md-3">
 
-        <label id="email-label">Email</label>
-        <input type="email" id="email" placeholder="email"/>
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+    <form class="col-12" id="survey-form">
+      <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Enter your name" >
+  </div>
 
-        <label id="number-label">Number</label>
-        <input type="number" id="number" min="0" max="9" placeholder="number"/>
+  <div class="form-group">
+  <label id="email-label" for="email">Email</label>
+  <input type="email" class="form-control" id="email" placeholder="Enter your email" >
+  </div>
 
-        <select id="dropdown">
-            <option>1</option>
-        </select>
 
+  <div class="form-group">
+  <label id="number-label" for="number">Age (optional)</label>
+  <input type="number" class="form-control" id="number" required min="10" max="100" placeholder="Enter your age" />
+  </div>
+
+  <div class="form-group">
+  <label for="dropdown">Which option best describes your current role?</label>
+  <select class="form-control" id="dropdown">
+  <option>select Current role</option>
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Full Time Learner</option>
+  <option>Prefer not to Say</option>
+  <option>Others</option>
+  </select>
+  </div>
+
+        <div class="form-group">
+          <div class="form-check">
+            <input type="radio" name="radio-button" value="Definitely">
+            <label class="form-check-label">Definitely</label>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input type="radio" name="radio-button" value="Maybe">
+              <label class="form-check-label">Maybe</label>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+              <input type="radio" name="radio-button" value="Not-sure">
+              <label class="form-check-label">Not sure</label>
+            </div>
+          <div class="form-group">
+            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <div class="form-check">
+              <input type="checkbox" name="" value="Front-end Projects">
+              <label class="form-check-label">Front-end Projects</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" name="" value="Back-end Projects">
+                <label class="form-check-label">Back-end Projects</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" name="" value="Data Visualization">
+                  <label class="form-check-label">Data Visualization</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input type="checkbox" name="" value="Challenges">
+                    <label class="form-check-label">Challenges</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" name="" value="Open Source Community">
+                      <label class="form-check-label">Open Source Community</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="checkbox" name="" value="Gitter help rooms">
+                        <label class="form-check-label">Gitter help rooms</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input type="checkbox" name="" value="Videos">
+                          <label class="form-check-label">Videos</label>
+                          </div>
+
+                          <div class="form-check">
+                            <input type="checkbox" name="" value="City Meetups">
+                            <label class="form-check-label">City Meetups</label>
+                            </div>
+
+                            <div class="form-check">
+                              <input type="checkbox" name="" value="Wiki">
+                              <label class="form-check-label">Wiki</label>
+                              </div>
+
+                              <div class="form-check">
+                                <input type="checkbox" name="" value="Forum">
+                                <label class="form-check-label">Forum</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" name="" value="Additional Courses">
+                                  <label class="form-check-label">Additional Courses</label>
+                                  </div>
+              <div class="form-group">
+                <label for="Comments">Any comments or suggestions?</label>
+                <textarea class="form-control" name="comments" rows="3" placeholder="Enter Your Comments"></textarea>
+
+              </div>
+              <div>
+                <button class="btn btn-success col-md-12" type="Submit" name="submit-button">Submit</button>
+              </div>
+                  </div>
+                  </div>
     </form>
   </body>
 </html>
