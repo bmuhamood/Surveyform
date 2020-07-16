@@ -4,7 +4,7 @@
 
 > This project is a responsive Survey form which can be integrated to any backend.
 
-![screenshot]()
+![screenshot](CAPTURE.jpg)
 
 ## Task
 Build a survey form in which visitors can leave feedback on a certain subject.
